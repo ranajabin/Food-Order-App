@@ -1,0 +1,233 @@
+/* Enter your custom styles here */
+
+.sapMImageContentImageIcon {
+    display: flow-root;
+    position: relative;
+    right: 100rem;
+    bottom: 0;
+    left: 0rem;
+    max-height: 250.5rem;
+    margin-top: 40px;
+    border-radius: 1rem;
+}
+
+.sapMLabel {
+    color: #107e3e;
+    font-size: 1.25rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-line;
+    cursor: text;
+}
+
+.sapUiFormResLayout.sapUiFormBackgrTranslucent>div {
+    background-color: #fafafa;
+}
+
+.sapMLnk {
+    color: #0a6ed1;
+    text-decoration: double;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-size: 1.74rem;
+    cursor: pointer;
+    margin-top : 80px;
+}
+
+.sapMSFF {
+    border-radius: 1.125rem;
+    margin-top:20px;
+}
+
+.sapMText {
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: pre-line;
+    word-wrap: break-word;
+    cursor: text;
+    font-size: 1.4rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    line-height: revert;
+    color: #0aa9a1;
+}
+
+/*  .sapMImageContentImageIcon {
+    display: flow-root;
+    position: relative;
+    right: 100rem;
+    bottom: 0;
+    left: 2rem;
+    max-height: 250.5rem;
+    margin-top: 40px;
+    border-radius: 1rem;
+    
+}  */
+
+.sapMGT.TwoByOne {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 80px;
+}
+
+/* .sapUiMedia-Std-Desktop .sapMITH.sapUiResponsiveContentPadding .sapMITBScrollContainer, .sapUiMedia-Std-Desktop .sapMITB.sapUiResponsiveContentPadding .sapMITBScrollContainer {
+    margin: 2.5rem;
+} */
+
+/* .sapUiBody {
+   background-color: #181fdf !important;
+   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/015/277/119/small/fast-food-burger-with-chips-and-coke-red-background-illustration-free-vector.jpg");  
+   color: #dbbd12;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    forced-color-adjust: none; 
+} */
+/* .formback{
+   background-color: #107e3e; 
+}  */
+.onvbox1{
+    margin-top: 150px;
+ /*   background-color: #181fdf;   */
+} 
+.myPass1{
+    text-emphasis-color: Yellow;
+}
+.myform2{
+    background-color: yellow;
+}
+
+.body1{
+    background-image: url("https://i.pinimg.com/236x/d3/cd/41/d3cd41748167391b76fa4555b53af1c0.jpg");  
+}
+
+.onimg1{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/690/403/original/food-delivery-online-on-phone-orange-background-illustration-fastfood-design-concept-business-shop-promotion-transport-to-home-free-vector.jpg");  
+}
+
+.onimg2{
+    background-image: url("https://i.pinimg.com/236x/29/f8/4f/29f84f71c59ecc45020de2c4b89debda.jpg");
+    background-position: center;
+   /* background-repeat: no-repeat;  
+    width: 100%;  */
+}
+.onimg3{
+    background-image: url("https://i.pinimg.com/236x/1a/f2/85/1af285026278b92d5098275b4f729f33.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.onimg4{
+    background-image: url("https://i.pinimg.com/236x/eb/0e/b2/eb0eb25a9fa63d88b5a5c06897cde494.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.onimg5{
+    background-image: url("https://i.pinimg.com/236x/d1/e2/63/d1e26397277acc41332b9e5b371a9431.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  .myCustomButton{
+    border: 0px solid #ababab;
+    border-bottom: 3px solid;
+    border-color: red;
+    border-radius: 10rem;
+    color: #e2cc00;
+}  */
+
+ .sapUiFormResLayout.sapUiFormBackgrTranslucent>div {
+    background-color: #c1c362;
+    margin-top: 50px;
+} 
+.inpt1{
+    color: bisque;
+}
+.sapMInputBaseInner {
+    background: #f0f7d5da;
+   
+}
+
+
+/* .myBox3{
+    background-color: #c36262;
+    margin-top: 50px;
+}  */
+
+ .myBox1{
+    
+    background-image: url("https://i.pinimg.com/236x/fd/19/83/fd19830ec7dda1fa37129f8b2091f81c.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 120px;
+}   
+.body1{
+    background-color: azure ;
+}
+.body2{
+    background-color: rgb(48, 204, 204) ;
+}
+
+.onvbox2{
+    background-color: bisque;
+}
+.onlbl1{
+    color :black;
+    font-size: 10px;
+}
+.onlnk{
+    font-size: 20px;
+}
+
+.myText1{
+    margin-top: 10px; 
+    
+}
+.myCustomButton{
+    color: rgb(217, 255, 0);
+    font-family: Arial;
+    font-size: 10px;
+    background-color: Orange;
+    border-radius: 10rem;
+    width: 100px;
+    height: 100px;
+}
+
+.myLabel{
+    color :rgb(231, 68, 18);
+    background-color: aqua;
+    font-size: 10px;
+}
+
+.myText{
+    color :rgb(201, 243, 15);
+    background-color: rgb(255, 239, 219);
+    font-size: 20px;
+}
+
+.forgotpwdbkgrnd{
+    background-color: rgb(253, 232, 253);
+}
+
+.verificationback{
+    background-color: aliceblue;
+}
+
+.myPass3{
+    color : red;
+}
+.onpresend{
+    width: 100px;
+}
+
+.mylabel3{
+    color:rgb(0, 68, 255);
+    font-size: 15px;
+}

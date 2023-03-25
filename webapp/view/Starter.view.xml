@@ -1,0 +1,122 @@
+<mvc:View controllerName="bindingsample3.bindingsampleproject3.controller.Starter" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page id="page" title="Starter Food Items" showNavButton="true" navButtonPress="onNavBack" class = "onimg3">
+        <content>
+            <HBox>
+                <!-- <Button icon="sap-icon://menu" />                             -->
+                <!-- <Label text="Menu" design="Bold" /> -->
+
+                <Label text="My Order App: " design="Bold" />
+
+                 <MenuButton text="Menu" width="10rem" icon="sap-icon://menu" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                        <menu>
+                            <Menu itemSelected="onMenuAction">
+                                <MenuItem text="Pizza" icon="" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen" press="onPress">
+                                    <customData>
+                                        <core:CustomData key="target" value="p1" />
+                                    </customData>
+                                </MenuItem>
+                                <MenuItem text="Burger" icon="" />
+                            <MenuItem text="Chat" icon="" />
+                            <MenuItem text="Kabab" icon="" />
+                            <MenuItem text="Noodles" icon="" />
+                            <MenuItem text="Manchurian" icon="" />
+                            <MenuItem text="Chicken" icon="">
+                                    <items>
+                                       <MenuItem text="Chicken 65" icon="" />
+                                    <MenuItem text="Chicken Lollipop" icon="" />
+                                    <MenuItem text="Chicken Manchurian" icon="" />
+                                    </items>
+                                </MenuItem>
+                            </Menu>
+                        </menu>
+                    </MenuButton>              
+            </HBox>
+            <l:HorizontalLayout class="sapUiContentPadding">
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/db/e9/c0/dbe9c03262a3ccc46d61f561d04445ae.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 12" />
+                    <Text text="Veg Burger" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress1" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/fe/bd/31/febd31f21ae58f060a4fa595c3c6da64.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 8" />
+                    <Text text="Muradabadi Daal Chat" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress2" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/bb/fb/7c/bbfb7cf8242dc03a9c91b5dff31de15d.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 12" />
+                    <Text text="Crunchy Cucumber Cups" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress3" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/a7/68/6b/a7686b9ad29a927459bd34e06c47ef8a.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 25" />
+                    <Text text="Kalmi Kabab" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress4" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.ebayimg.com/thumbs/images/g/5B8AAOSw85ZjLY~w/s-l300.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 15" />
+                    <Text text="Pizza" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress5" />
+                </VBox>
+            </l:HorizontalLayout>
+
+            <l:HorizontalLayout class="sapUiContentPadding">
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/aa/bf/51/aabf51b02bded6def2eeb596bdce3080.jpg" densityAware="true" width="250px" press="onPress1" height="200px" />
+                    <Text text="$ 20" />
+                    <Text text="Chicken 65" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress6" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/70/9e/6b/709e6b42507f7f913c84739828504d7d.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 15" />
+                    <Text text="R and D Tikki Sandwich" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress7" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/f9/7b/be/f97bbee69ec6a85e1b1b4f7d259f2d9e.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 10" />
+                    <Text text="Raj Kachori" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress8" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/bd/13/61/bd1361366feb427591d296b0a00d8ad7.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 16" />
+                    <Text text="WhataBurger" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress9" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/86/84/f9/8684f9fd4c5d925075ed087af523b74c.jpg" densityAware="true" width="250px" height="200px" />
+                    <Text text="$ 18" />
+                    <Text text="corn methi kawab" />
+                    <Button text="+ Add to cart" width="250px" type="Reject" press="onPress10" />
+                </VBox>
+            </l:HorizontalLayout>
+
+            <!--  <VBox>
+                <ImageContent src="https://www.shutterstock.com/image-vector/tasty-pizza-banner-template-cooking-260nw-1689725935.jpg" width="100px" height="100%" description="Starter" class=".sapMImageContentImageIcon" />
+                <ImageContent src="https://i.pinimg.com/474x/bb/92/1b/bb921be370f24b90f4a9b9854d88ab28.jpg" width="100px" height="100%" description="Main Course" class=".sapMImageContentImageIcon" />
+            </VBox>  -->
+        </content>
+
+        <footer>
+            <Bar design="Footer">
+                <contentRight>
+                    <Button text="Order Now" press="onPressOrder" type="Emphasized" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

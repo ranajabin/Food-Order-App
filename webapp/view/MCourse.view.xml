@@ -1,0 +1,50 @@
+<mvc:View controllerName="bindingsample3.bindingsampleproject3.controller.MCourse" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="MAIN COURSE ITEM" showNavButton="true" navButtonPress="onNavBack" class="onimg4">
+        <content>
+            <l:HorizontalLayout class="sapUiContentPadding">
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/7b/b0/30/7bb030ab0f878545631b980550447e00.jpg" densityAware="true" ariaHasPopup="Chicken Machurian" width="250px" height="500px" press="onPress1" />
+                    <Text text="Chicken Jalfrezi" />
+                    <Text text="Ratings: *****" />
+                    <Text text="Price = Rs 500" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/7a/da/e6/7adae6e84e1bc49a855d1167b515ebe5.jpg" densityAware="true" width="250px" height="500px" press="onPress2" />
+                    <Text text="Egg Masala" />
+                    <Text text="Ratings: ***" />
+                    <Text text="Price = Rs 340" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/05/09/ab/0509ab83bf5cccf336a80b07d2d38cd6.jpg" densityAware="true" width="250px" height="500px" press="onPress3" />
+                    <Text text="Chicken Biryani" />
+                    <Text text="Ratings: ****" />
+                    <Text text="Price = Rs 450" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/92/d2/7f/92d27fa25de2e452c50c919b2d872f32.jpg" densityAware="true" width="250px" height="500px" press="onPress4" />
+                    <Text text="Veg Noodles" />
+                    <Text text="Ratings: ***" />
+                    <Text text="Price = Rs 340" />
+                </VBox>
+
+                <VBox>
+                    <Image src="https://i.pinimg.com/236x/ce/23/82/ce238203b42a5a934f2003d4ad45bcf1.jpg" densityAware="true" width="250px" height="500px" press="onPress5" />
+                    <Text text="Pudina Milk Shake" />
+                    <Text text="Ratings: ****" />
+                    <Text text="Price = Rs 290" />
+                </VBox>
+            </l:HorizontalLayout>
+        </content>
+
+        <footer>
+            <Bar design="Footer">
+                <contentRight>
+                    <Button text="Place your Order" press="onPressConfirm" type="Emphasized" />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

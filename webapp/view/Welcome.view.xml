@@ -1,0 +1,127 @@
+<mvc:View controllerName="bindingsample3.bindingsampleproject3.controller.Welcome" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}" class="onimg1">
+        <headerContent>
+            <Button text="Logout" icon="sap-icon://action" textDirection="Inherit" press="onlog" />
+        </headerContent>
+        <content>
+            <!--        <Image src = "https://replicate.delivery/pbxt/q7mmXeeoVIogQUoaAvewe7epM1vmM2EaClpSxT0A7rQeDZNIE/out..jpeg" width = "40rem" height = "40rem" />  -->
+            <VBox alignItems="Center" margin="100.0rem">
+                <Label text="WELCOME TO HOME KITCHEN!!! " design="Bold" />
+                <HBox>
+                    <!-- <Button icon="sap-icon://menu" /> -->
+
+                    <!-- <Label text="Hello, Consumers!!!" class = ".sapMLabel"/>
+
+                    <Button icon="sap-icon://bell" /> -->
+
+                    <MenuButton text="Language" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                        <menu>
+                            <Menu itemSelected="onMenuAction">
+                                <MenuItem text="English" icon="https://i.pinimg.com/236x/8e/3a/ed/8e3aed8172637d71f540b21fdb846bf4.jpg" />
+                                <MenuItem text="Hindi" icon="https://i.pinimg.com/236x/e9/54/73/e95473826b9ba1e7ec9277349495ae41.jpg" />
+                                <MenuItem text="Telugu" icon="https://i.pinimg.com/236x/a3/6f/9e/a36f9e6fef14949badadcebdf12ca4c4.jpg" />
+                            </Menu>
+                        </menu>
+                    </MenuButton>
+
+                    <MenuButton text="Country" width="8rem" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                        <menu>
+                            <Menu itemSelected="onMenuAction">
+                                <MenuItem text="India" icon="https://i.pinimg.com/236x/bb/d6/9f/bbd69f57d58b2eecc0623ef175f6cf60.jpg" />
+                                <MenuItem text="Afganistan" icon="https://i.pinimg.com/236x/c6/fa/e9/c6fae9a81535ea3d8761316fba76a8cf.jpg" />
+                                <MenuItem text="Pakistan" icon="https://i.pinimg.com/236x/cf/ed/75/cfed7577f189779d83349e9c4e1a59ff.jpg" />
+                            </Menu>
+                        </menu>
+                    </MenuButton>
+
+                    <MenuButton text="Select" width="10rem" icon="sap-icon://menu" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                        <menu>
+                            <Menu itemSelected="onMenuAction">
+                                <MenuItem text="Your orders" icon="sap-icon://edit" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen" press="onPress">
+                                    <customData>
+                                        <core:CustomData key="target" value="p1" />
+                                    </customData>
+                                </MenuItem>
+                                <MenuItem text="Favorite orders" icon="sap-icon://save" />
+                                <MenuItem text="Address book" icon="sap-icon://open-folder" />
+                                <MenuItem text="More" icon="sap-icon://open-folder">
+                                    <items>
+                                        <MenuItem text="About" icon="" />
+                                        <MenuItem text="Send feedback" icon="" />
+                                        <MenuItem text="Rate us" icon="" />
+                                    </items>
+                                </MenuItem>
+                            </Menu>
+                        </menu>
+                    </MenuButton>
+                </HBox>
+
+                <VBox>
+                    <SearchField id="searchField" width="380px" placeholder="Search for..." enableSuggestions="true" search=".onSearch" suggest=".onSuggest" class=".sapMSFF" />
+                </VBox>
+
+                <!--   <ImageContent src="https://i.pinimg.com/236x/22/d7/e6/22d7e6b51cf6d5a227f3030d3c338f19.jpg" width="280px" height="500rem" description="Home Delivery" press="press" class=".sapMImageContentImageIcon" />  -->
+                <!--	 <Label text = "Today's Menu" design = "bold" />  -->
+
+                <!-- <Link text = "Starter" class = ".sapMLnk"/>
+<Link text  ="Main COurse" class = ".sapMLnk" />  -->
+                <!--   <FlexBox height = "100px" class = "ne-flexbox1">   -->
+                <!-- <IconTabBar id="idIconTabBarInlineMode" headerMode="Inline" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+                            <items>
+                                <IconTabFilter text="All" key="all">  -->
+                <Text text="&#xA;  " />
+                <VBox>
+                    <l:HorizontalLayout>
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                            <GenericTile backgroundImage="https://www.shutterstock.com/image-vector/tasty-pizza-banner-template-cooking-260nw-1689725935.jpg" press="onClickStarter">
+                                <TileContent footer="Starter" />
+                            </GenericTile>
+                        </SlideTile>
+
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                            <GenericTile backgroundImage="https://i.pinimg.com/474x/bb/92/1b/bb921be370f24b90f4a9b9854d88ab28.jpg" press="onClickMCourse">
+                                <TileContent footer="Main Course" />
+                            </GenericTile>
+                        </SlideTile>
+                    </l:HorizontalLayout>
+
+                    <l:HorizontalLayout>
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                            <GenericTile backgroundImage="https://st4.depositphotos.com/1020070/41603/v/1600/depositphotos_416036246-stock-illustration-fast-food-meals-frame-street.jpg" press="onClickItalian">
+                                <TileContent footer="Italian" />
+                            </GenericTile>
+                        </SlideTile>
+
+                        <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                            <GenericTile backgroundImage="https://thumbs.dreamstime.com/z/set-fast-food-meals-collection-cartoon-snack-icons-burger-sausage-french-fries-hot-dog-cola-beer-pizza-81147854.jpg" press="onClickDessert">
+                                <TileContent footer="Dessert" />
+                            </GenericTile>
+                        </SlideTile>
+                    </l:HorizontalLayout>
+                </VBox>
+                <!--    </IconTabFilter>
+</items>
+</IconTabBar>   -->
+                <!--       </FlexBox>   -->
+                <!--   <HBox>
+                    <Button icon="https://www.shutterstock.com/image-vector/tasty-pizza-banner-template-cooking-260nw-1689725935.jpg" width="100px" height="100%" text="Starter" press="onClickStarter" class=".sapMImageContentImageIcon" />
+                    <Button icon="https://i.pinimg.com/474x/bb/92/1b/bb921be370f24b90f4a9b9854d88ab28.jpg" width="100px" height="100%" text="Main Course" press="onClickMCourse" class=".sapMImageContentImageIcon" />
+                </HBox>
+
+                <HBox>
+                    <Button icon="https://st4.depositphotos.com/1020070/41603/v/1600/depositphotos_416036246-stock-illustration-fast-food-meals-frame-street.jpg" width="100px" height="100%" text="Italian" press="onClickItalian" class=".sapMImageContentImageIcon" />
+                    <Button icon="https://thumbs.dreamstime.com/z/set-fast-food-meals-collection-cartoon-snack-icons-burger-sausage-french-fries-hot-dog-cola-beer-pizza-81147854.jpg" width="100px" height="100%" text="Dessert" press="onClickDessert" class=".sapMImageContentImageIcon" />
+                </HBox>  -->
+                <!-- <Label text="CATEGORIES " design="Bold" /> -->
+            </VBox>
+        </content>
+        <footer>
+            <Bar design="Auto">
+                <contentMiddle>
+                    <Button text="Thanks for Visiting!" press="onpress" />
+                    <!--  <Button text = "SignIn" type = "Emphasized" press = "onpress1"/>  -->
+                </contentMiddle>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

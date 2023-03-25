@@ -1,0 +1,178 @@
+{
+  "_version": "1.17.0",
+  "sap.app": {
+    "id": "bindingsample3.bindingsampleproject3",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.8.1",
+      "toolsId": "81e86289-3f69-45ac-ae95-ebf28d290777"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.71.52",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "bindingsample3.bindingsampleproject3.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "bindingsample3.bindingsampleproject3.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "View1",
+          "view": "View1",
+          "controlId" : "app",
+          "target": [
+            "TargetView1"
+          ] 
+                
+        },
+        
+        {
+          "pattern": "Forgotpwd",
+          "name": "Forgotpwd",
+          "view": "Forgotpwd",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        },
+
+        {
+          "pattern": "Verification",
+          "name": "Verification",
+          "view": "Verification",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        },
+        {
+          "pattern": "Welcome",
+          "name": "Welcome",
+          "view": "Welcome",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        },
+     
+       
+        {
+          "pattern": "Starter",
+          "name": "Starter",
+          "view": "Starter",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        },
+        {
+          "pattern": "MCourse",
+          "name": "MCourse",
+          "view": "MCourse",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        },
+        {
+          "pattern": "Italian",
+          "name": "Italian",
+          "view": "Italian",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        },
+        {
+          "pattern": "Dessert",
+          "name": "Dessert",
+          "view": "Dessert",
+          "targetAggregation" : "pages",
+          "controlId" : "app"
+        }
+        
+      ],
+      "targets": {
+        "TargetView1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View1",
+          "viewName": "View1"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "bindingsample3.bindingsampleproject3.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<mvc:View controllerName="bindingsample3.bindingsampleproject3.controller.Verification" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="Food Order App" showNavButton="true" navButtonPress="onNavBack" class="verificationback">
+        <content>
+            <!--   <VBox alignContent="Center" alignItems="Center" class=".sapUiBody .body1">  
+                <FlexBox height="100px" class="myBox2">  -->
+            <VBox alignContent="Center" alignItems="Center" class="onvbox1">
+                <f:SimpleForm editable="true" alignItems="Center" alignContent="Center" width="350px" title="" class="formback" emptySpanL="4" emptySpanM="4">
+                    <f:content>
+                        <!--   <Text text="Cancel" press="onpress" />  -->
+
+                        <VBox alignItems="Center" class="onvbox2">
+                            <!--  < Button icon="sap-icon//people"  />  -->
+
+                            <Text text="Verification" class="myPass3" />
+                            <!--  <Icon src ="sap-icon//person-placeholder" />  -->
+
+                            <Input type="text" placeholder="code" width="200px" id="vcode1" />
+                            <Text text="" />
+                            <Button text="Send" type="Emphasized" id="buttonId" press="onpresend1" class="onpresend" />
+                            <Label text="Didn't receive code?" class="onlbl1" />
+                            <Link text="Resend Now" class="onlnk" press="onpresslnk" />
+                        </VBox>
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+            <!--       </FlexBox>
+            </VBox>  -->
+        </content>
+    </Page>
+</mvc:View>

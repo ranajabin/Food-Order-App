@@ -1,0 +1,81 @@
+<mvc:View controllerName="bindingsample3.bindingsampleproject3.controller.Italian" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+    <Page id="page" title="Italian Food" showNavButton="true" navButtonPress="onNavBack" class="onimg5">
+        <content>
+            <VBox alignItems="Center">
+                <!-- <VBox>
+                    <SearchField id="searchField" width="280px" placeholder="Search for..." enableSuggestions="true" search=".onSearch" suggest=".onSuggest" class=".sapMSFF"/>
+                </VBox> -->
+                <l:VerticalLayout class="sapUiContentPadding">
+                    <HBox>
+                        <Image src="https://i.pinimg.com/236x/7f/1f/87/7f1f87d5eb4ddc08f3f9fff4dd79085a.jpg" densityAware="true" width="120px" press="onPress1" />
+                        <VBox>
+                            <Text text="Noodles" class=".sapMText" />
+                            <Button type="Emphasized" text="Price: Rs 150" width="250px" press="onPressNoodles" />
+                        </VBox>
+                    </HBox>
+                    <HBox>
+                        <Image src="https://i.pinimg.com/236x/be/03/a1/be03a1b765be00557f7a519bfb6accae.jpg" densityAware="true" width="120px" />
+                        <VBox>
+		<Text text="Pizza" />&#xA;
+		<Button type="Emphasized" text="Price: Rs 350" width="250px" press="onPressPizza" />
+		</VBox>
+                    </HBox>
+
+                    <HBox>
+                        <Image src="https://i.pinimg.com/236x/c2/d5/d3/c2d5d3ef14d617c975dd16fe759a83f0.jpg" densityAware="true" width="120px" />
+                        <VBox>
+		<Text text="Cake" />&#xA;
+		<Button type="Emphasized" text="Price: Rs 200" width="250px" press="onPressCake" />
+		</VBox>
+                    </HBox>
+
+                    <HBox>
+                        <Image src="https://i.pinimg.com/236x/1d/ea/98/1dea9867ed5e367844f24cc04a65c12f.jpg" densityAware="true" width="120px" />
+                        <VBox>
+		<Text text="Biryani" />&#xA;
+		<Button type="Emphasized" text="Price: Rs 450" width="250px" press="onPressBiryani" />
+		</VBox>
+                    </HBox>
+
+                    <HBox>
+                        <Image src="https://i.pinimg.com/236x/81/3b/ee/813bee5aafa354ad6d9932062eac62e4.jpg" densityAware="true" width="120px" />
+                        <VBox>
+		<Text text="Chicken Pizza" />&#xA;
+		<Button type="Emphasized" text="Price: Rs 350" width="250px" press="onPressChicken" />
+		</VBox>
+                    </HBox>
+                </l:VerticalLayout>
+
+                <!-- <l:HorizontalLayout class="sapUiContentPadding" >
+		<Image
+			src="https://i.pinimg.com/236x/cb/64/01/cb64018d8c3ed0749d03aafef81276ee.jpg"
+			densityAware="true"
+			width="250px" press = "onPress1">
+		</Image>
+		<Image
+			src="https://i.pinimg.com/236x/95/96/0a/95960adaec14ce5ff156985c27288e47.jpg"
+			densityAware="true"
+			width="250px">
+		</Image>
+		<Image
+			src="https://i.pinimg.com/236x/c9/c4/7f/c9c47f653d93e6c32f4b1bbb59ab9055.jpg"
+			densityAware="true"
+			width="250px">
+		</Image>
+
+        <Image
+			src="https://i.pinimg.com/236x/81/3b/ee/813bee5aafa354ad6d9932062eac62e4.jpg"
+			densityAware="true"
+			width="250px">
+		</Image>
+
+         <Image
+			src="https://i.ebayimg.com/thumbs/images/g/5B8AAOSw85ZjLY~w/s-l300.jpg"
+			densityAware="true"
+			width="250px">
+		</Image>
+	</l:HorizontalLayout> -->
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,227 @@
+<mvc:View controllerName="bindingsample3.bindingsampleproject3.controller.Dessert" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:tnt="sap.tnt" xmlns:core="sap.ui.core">
+    <Page id="page" title="Dessert Items" showNavButton="true" navButtonPress="onNavBack" class = "onimg2">
+        <content>
+            <FlexBox alignItems="Center" justifyContent="Center">
+                <VBox alignItems="Center">
+                    <!-- <tnt:ToolHeader width="390px" class = ".sapTntToolHeader .sapMTB"> -->
+                    <VBox alignContent="Begin" alignItems="Begin">
+
+                     <MenuButton text="Menu" icon="sap-icon://menu" width="8rem" buttonMode="Split" defaultAction="onDefaultAction" beforeMenuOpen="onBeforeMenuOpen">
+                        <menu>
+                            <Menu itemSelected="onMenuAction">
+                            <MenuItem text="Cake" icon="" press="onPress" />
+                                <MenuItem text="pastry" icon="" />
+                                <MenuItem text="sweet" icon="" />
+                                <MenuItem text="Icecream" icon="" />
+                                <MenuItem text="Blueberry and banana" icon="" />
+                            </Menu>
+                        </menu>
+                    </MenuButton>
+                    </VBox>
+                    <VBox>
+                        <IconTabBar headerMode="Standard" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding" >
+                            <items>
+                                <IconTabFilter text="All" key="all">  
+                               <!--     <Text text="Check all available Items here ... &#xA; &#xA;"/>  -->
+
+                                    <l:VerticalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/ea/73/46/ea7346f12bca6be8a660bca64645f6e0.jpg">
+                                                    <TileContent footer="Starter" />
+                                                </GenericTile>
+                                            </SlideTile>
+
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/bc/cb/df/bccbdfd18165cc1242e25edfb593aeab.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/47/2b/ec/472bec04a3f09c34ac51ed79c4aec411.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/07/75/5f/07755fd8a0b5dcfb6662a340d71383a8.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/ef/12/6a/ef126a34c8b2afad6e1245931d74f4cc.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/a5/4f/32/a54f32e6434b5697e650b03554de5fb6.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                    </l:VerticalLayout>
+
+                                    <!--       <HBox height="60px">
+                                        <ImageContent src="https://i.pinimg.com/236x/ea/73/46/ea7346f12bca6be8a660bca64645f6e0.jpg" description="" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                       
+                                        <ImageContent src="https://i.pinimg.com/236x/bc/cb/df/bccbdfd18165cc1242e25edfb593aeab.jpg" description="" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    </HBox>   -->
+                                    <!--    
+                                    <VBox height="200px">
+                                        <ImageContent src="https://i.pinimg.com/236x/47/2b/ec/472bec04a3f09c34ac51ed79c4aec411.jpg" description="" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    </VBox>
+                                    <ImageContent src="https://i.pinimg.com/236x/07/75/5f/07755fd8a0b5dcfb6662a340d71383a8.jpg" description="Authentic Italian Gravy" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/ef/12/6a/ef126a34c8b2afad6e1245931d74f4cc.jpg" description="Italian Cream Cannoncini" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/a5/4f/32/a54f32e6434b5697e650b03554de5fb6.jpg" description="Creamy red Pepper Pasta" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />  -->
+                                </IconTabFilter>
+
+                                <IconTabFilter text="Brownie" key="brownie">
+                               <!--     <Text text="Brownies go here ... &#xA; &#xA;" />  -->
+                                    <l:VerticalLayout alignItems= "Initial">
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/c3/06/1a/c3061a103277e12ce5a4b827f0ef6f17.jpg">
+                                                    <TileContent footer="Brownie Walnut Chunk Cookies" />
+                                                </GenericTile>
+                                            </SlideTile>
+
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/85/57/1b/85571b5f700dab925666032eac637306.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Brownie espresso cookies" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/47/2b/ec/472bec04a3f09c34ac51ed79c4aec411.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Fudgy Chocloate Browny Cookies" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/07/75/5f/07755fd8a0b5dcfb6662a340d71383a8.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/bb/a7/f8/bba7f8361a13183c1e455fa28df26ed2.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/a5/4f/32/a54f32e6434b5697e650b03554de5fb6.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                    </l:VerticalLayout>
+
+                              <!--      <ImageContent src="https://i.pinimg.com/236x/c3/06/1a/c3061a103277e12ce5a4b827f0ef6f17.jpg" description="Brownie Walnut Chunk Cookies" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/85/57/1b/85571b5f700dab925666032eac637306.jpg" description="Brownie espresso cookies" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/bb/a7/f8/bba7f8361a13183c1e455fa28df26ed2.jpg" description="Fudgy Chocloate Browny Cookies" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" /> -->
+                                </IconTabFilter>
+                                <IconTabFilter text="Pastry" key="pastry">
+                              <!--      <Text text="Pastries here ...  &#xA; &#xA;" />  -->
+    <l:VerticalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/8a/41/c0/8a41c0d320756cbe52794cb474fd31d0.jpg">
+                                                    <TileContent footer="French Pastry" />
+                                                </GenericTile>
+                                            </SlideTile>
+
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/3e/f9/90/3ef990136489770f57e98c9a444b0834.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Paris Brest" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/80/6f/60/806f605a4d58ec69a8136b76bbce6cdd.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Malai Peda" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/07/75/5f/07755fd8a0b5dcfb6662a340d71383a8.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/bb/a7/f8/bba7f8361a13183c1e455fa28df26ed2.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/a5/4f/32/a54f32e6434b5697e650b03554de5fb6.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                    </l:VerticalLayout>
+                             <!--       <ImageContent src="https://i.pinimg.com/236x/8a/41/c0/8a41c0d320756cbe52794cb474fd31d0.jpg" description="French Pastry" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/3e/f9/90/3ef990136489770f57e98c9a444b0834.jpg" description="Paris Brest" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/80/6f/60/806f605a4d58ec69a8136b76bbce6cdd.jpg" description="Malai Peda" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />   -->
+                                </IconTabFilter>
+                                <IconTabFilter text="Cupcake" key="cupcake" >
+                              <!--      <Text text="Cupcake goes here ... &#xA; &#xA;" />  -->
+
+                                       <l:VerticalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/88/b1/4d/88b14d0967c9065a6b2969b114dcb1ce.jpg">
+                                                    <TileContent footer="Strawberry Cupcakes" />
+                                                </GenericTile>
+                                            </SlideTile>
+
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/cc/e7/79/cce779f36d564372a9d87476c7ae5177.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Chocolate Cupcake" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/38/d3/b0/38d3b063f2c30c44568e44f8c1b25039.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Kahlua Cupcake" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/07/75/5f/07755fd8a0b5dcfb6662a340d71383a8.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                        <l:HorizontalLayout>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/bb/a7/f8/bba7f8361a13183c1e455fa28df26ed2.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                            <SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+                                                <GenericTile backgroundImage="https://i.pinimg.com/236x/a5/4f/32/a54f32e6434b5697e650b03554de5fb6.jpg" press="onClickMCourse">
+                                                    <TileContent footer="Main Course" />
+                                                </GenericTile>
+                                            </SlideTile>
+                                        </l:HorizontalLayout>
+                                    </l:VerticalLayout>
+
+                               <!--     <ImageContent src="https://i.pinimg.com/236x/88/b1/4d/88b14d0967c9065a6b2969b114dcb1ce.jpg" description="Strawberry Cupcakes" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/cc/e7/79/cce779f36d564372a9d87476c7ae5177.jpg" description="Chocolate Cupcake" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />
+                                    <ImageContent src="https://i.pinimg.com/236x/38/d3/b0/38d3b063f2c30c44568e44f8c1b25039.jpg" description="Kahlua Cupcake" press="press" height="20px" width="30px" class=".sapMImageContentImageIcon" />  -->
+                               </IconTabFilter>
+                            </items>
+                        </IconTabBar>  
+                    </VBox>
+                    <!-- </tnt:ToolHeader> -->
+                </VBox>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>
